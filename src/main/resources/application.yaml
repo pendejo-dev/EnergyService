@@ -1,0 +1,25 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+  application:
+    name: EnergyService
+  datasource:
+    url: jdbc:postgresql://localhost:5432/energy_db
+    username: postgres
+    password: add76caf
+    driver-class-name: org.postgresql.Driver
+  sql:
+    init:
+      mode: always
+      platform: postgres
+logging:
+  level:
+    org:
+      springframework:
+        security: trace
