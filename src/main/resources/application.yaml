@@ -12,7 +12,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/energy_db
     username: postgres
-    password: add76caf
+    password: 1234
     driver-class-name: org.postgresql.Driver
   sql:
     init:
