@@ -1,5 +1,18 @@
 package com.example.EnergyService.dto;
 
-public record ResponseBuyMarketDto(
-        String login
-) { }
+import lombok.Data;
+
+import java.math.BigDecimal;
+
+@Data
+public class ResponseBuyMarketDto {
+    private Long order;
+    private String message;
+    private Double trxPrice;
+
+    public ResponseBuyMarketDto(Long order, String message, Double trxPrice) {
+        this.order = order;
+        this.message = message;
+        this.trxPrice = trxPrice;
+    }
+}
